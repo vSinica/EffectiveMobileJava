@@ -1,0 +1,240 @@
+
+
+###
+PUT http://localhost:8080/addCompany
+Content-Type: application/json
+
+{
+  "name": "companyName",
+  "description": "companyDesc",
+  "logo": "logo"
+}
+
+###
+dima:sdgbfsbg vadik ewgew ZGltYTpzZGdiZnNiZw== $2a$12$Bf4myGFXotYRigsKlD89JuyXRMyUsXm5UYw/pLlKq/T3KWmCc7Hcy
+###
+PUT http://localhost:8080/api/manage/v1/addProductManage
+Authorization: Basic dima sdgbfsbg
+Content-Type: application/json
+
+{
+  "name": "ProductName5",
+  "description": "ProductDesc5",
+  "price": 11,
+  "inStock": 1,
+  "companyName" : "companyName"
+}
+
+###
+POST http://localhost:8080/api/manage/v1/updateProductManage
+Content-Type: application/json
+Authorization: Basic dima sdgbfsbg
+
+{
+  "oldName": "ProductName",
+  "name": "NewProductName",
+  "description": "NewProductDesc",
+  "price": 22,
+  "inStock": 3,
+  "companyName" : "companyName"
+}
+
+###
+DELETE http://localhost:8080/api/manage/v1/deleteProductManage
+Authorization: Basic dima sdgbfsbg
+Content-Type: application/json
+
+ProductName
+
+
+###
+PUT http://localhost:8080/api/manage/v1/addDiscount
+Authorization: Basic dima sdgbfsbg
+Content-Type: application/json
+
+{
+  "expiresAt": "2023-02-02",
+  "productNames": [
+    "ProductName"
+  ],
+  "discountSize": 22
+}
+
+###
+POST http://localhost:8080/api/manage/v1/updateDiscount
+Authorization: Basic dima sdgbfsbg
+Content-Type: application/json
+
+{
+  "expiresAt": "2023-02-02",
+  "productNames": [
+    "ProductName"
+  ],
+  "discountSize": 22,
+  "discountId": 3
+}
+
+
+###
+DELETE http://localhost:8080/api/manage/v1/deleteDiscount
+Authorization: Basic vadik ewgew
+Content-Type: application/json
+
+3
+
+###
+PUT http://localhost:8080/api/v1/addPurchase
+Authorization: Basic vadik ewgew
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "productId": 3
+}
+
+###
+GET http://localhost:8080/api/v1/getPurchases
+Authorization: Basic vadik ewgew
+
+###
+DELETE http://localhost:8080/api/v1/doRefund
+Authorization: Basic vadik ewgew
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "purchaseId": 3
+}
+
+###
+POST http://localhost:8080/api/v1/addReview
+Authorization: Basic vadik ewgew
+Content-Type: application/json
+
+{
+  "header": 1,
+  "body": 3,
+  "productId": 3
+}
+###
+dmFkaWs6ZXdnZXc=  vadik:ewgew user password  $2a$04$Xn93DlpRLwXNQvV5Nge6AeDfoXkoWYMCYRXcZOV4MRKaN0GCVS0S2   $2a$12$5XWgdJFkDmDl05skTquNt.FCdV8amfVTwGlCGzUtpZ8Nq2lWUxmp6
+###
+POST http://localhost:8080/api/v1/addRating
+Authorization: Basic vadik ewgew
+Content-Type: application/json
+
+{
+  "rating": 1,
+  "productId": 3
+}
+
+###
+POST http://localhost:8080/api/manage/v1/addUserBalance
+Authorization: Basic dima sdgbfsbg
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "addBalance": -100
+}
+
+###
+GET http://localhost:8080/api/manage/v1/getUsers
+Authorization: Basic dima sdgbfsbg
+Content-Type: application/json
+
+###
+GET http://localhost:8080/api/manage/v1/getUser/1
+Authorization: Basic dima sdgbfsbg
+
+###
+GET http://localhost:8080/api/manage/v1/getPurchase/1
+Authorization: Basic dima sdgbfsbg
+
+###
+POST http://localhost:8080/api/manage/v1/locked
+Authorization: Basic dima sdgbfsbg
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "lockPosition": true
+}
+
+###
+DELETE http://localhost:8080/api/manage/v1/delete/2
+Authorization: Basic dima sdgbfsbg
+
+###
+DELETE http://localhost:8080/api/manage/v1/makeNotification
+Authorization: Basic dima sdgbfsbg
+Content-Type: application/json
+
+{
+  "userId": 2,
+   "description": "description",
+   "header": "header"
+}
+
+###
+GET http://localhost:8080/api/v1/getNotification
+Authorization: Basic vadik ewgew
+
+###
+PUT http://localhost:8080/api/v1/addProduct
+Authorization: Basic vadik ewgew
+Content-Type: application/json
+
+{
+  "name": "ProductName5",
+  "description": "ProductDesc5",
+  "price": 11,
+  "inStock": 1,
+  "companyName" : "companyName"
+}
+
+###
+POST http://localhost:8080/api/v1/updateProduct
+Authorization: Basic vadik ewgew
+Content-Type: application/json
+
+
+{
+  "oldName": "ProductName",
+  "name": "NewProductName",
+  "description": "NewProductDesc",
+  "price": 22,
+  "inStock": 3,
+  "companyName" : "companyName"
+}
+
+###
+DELETE http://localhost:8080/api/v1/deleteProduct
+Content-Type: application/json
+Authorization: Basic vadik ewgew
+
+ProductName
+
+###
+PUT http://localhost:8080/api/manage/v1/approveCompany
+Authorization: Basic vadik ewgew
+
+companyName
+
+###
+GET http://localhost:8080/api/v1/getProducts
+Authorization: Basic vadik ewgew
+
+###
+POST http://localhost:8080/api/manage/v1/aprooveProduct
+Authorization: Basic dima sdgbfsbg
+Content-Type: application/json
+
+{
+  "name": "ProductName7",
+  "state": true
+}
+
+###
+DELETE http://localhost:8080/api/manage/v1/deleteCompany/1
+Authorization: Basic dima sdgbfsbg
